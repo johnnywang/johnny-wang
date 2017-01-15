@@ -1,0 +1,45 @@
+@import "reset";
+
+$body-color: #494f5c;
+
+a {
+    transition: border 0.2s ease-in-out;
+    border-bottom: 1px solid rgba($body-color, 0);
+
+    &, &:hover, &:visited {
+        cursor: pointer;
+        color: inherit;
+        text-decoration: none;
+    }
+    &:hover {
+        border-bottom-color: rgba($body-color, 1);
+    }
+}
+body, html {
+    height: 100%;
+}
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: $body-color;
+    font: 14px/1 georgia, times, serif;
+}
+.title {
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+.traits {
+    margin-top: 15px;
+
+    .trait {
+        display: inline-block;
+        align-items: center;
+        display: flex;
+        margin-top: 5px;
+    }
+    .trait-icon {
+        margin: 0 5px -3px 0;
+        font-size: 16px;
+    }
+}

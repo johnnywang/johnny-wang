@@ -1,0 +1,6 @@
+{
+    "version": "3.4.5",
+    "command": "sass",
+    "isShellCommand": true,
+    "args": ["styles/main.scss", "styles.css"]
+}
